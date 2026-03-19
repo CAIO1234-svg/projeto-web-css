@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Patron</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial;
+        }
+
+        header{
+            width:180px;
+            height:100vh;
+            background:#777;
+            position:fixed;
+        }
+
+        nav ul{
+            list-style:none;
+            padding:0;
+        }
+
+        nav li{
+            margin:20px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:black;
+        }
+
+        main{
+            margin-left:180px;
+        }
+
+        section{
+            padding:50px;
+        }
+
+        #home{
+            background:#ddd;
+            text-align:center;
+        }
+
+        #home img{
+            width:200px;
+        }
+
+        #about{
+            background:#6f5f5f;
+            color:white;
+        }
+
+        #about img{
+            width:200px;
+            display:inline-block;
+        }
+
+        #about h2,
+        #about p,
+        #about button{
+            display:inline-block;
+            margin-left:20px;
+        }
+
+        structure{
+            background:#f1dddd;
+        }
+
+        structure img{
+            width:120px;
+            margin:10px;
+        }
+
+        services{
+            background:#ddd;
+            text-align:center;
+        }
+
+        services article{
+            display:inline-block;
+            width:150px;
+            margin:10px;
+        }
+
+        services img{
+            width:100%;
+        }
+
+        localization{
+            background:#eee;
+        }
+
+        iframe{
+            width:250px;
+            height:150px;
+        }
+
+        footer{
+            background:#f1dddd;
+            text-align:center;
+            padding:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#structure">Estrutura</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#localization">Localização</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="home">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/4/43/FCBarcelona.svg/1280px-FCBarcelona.svg.png">
+    </section>
+
+    <section id="about">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzU4Bt3ZqZz5LnDqvom_yVLkCvjPK4JjUsw&s">
+        <h2>Sobre nós</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button>botao</button>
+    </section>
+
+    <section id="structure">
+        <h2>Estrutura</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzU4Bt3ZqZz5LnDqvom_yVLkCvjPK4JjUsw&s">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzU4Bt3ZqZz5LnDqvom_yVLkCvjPK4JjUsw&s">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzU4Bt3ZqZz5LnDqvom_yVLkCvjPK4JjUsw&s">
+    </section>
+
+    <section id="services">
+        <h2>Serviços</h2>
+
+        <article>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzU4Bt3ZqZz5LnDqvom_yVLkCvjPK4JjUsw&s">
+            <h3>Titulo</h3>
+        </article>
+
+        <article>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzU4Bt3ZqZz5LnDqvom_yVLkCvjPK4JjUsw&s">
+            <h3>Titulo</h3>
+        </article>
+
+        <article>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzU4Bt3ZqZz5LnDqvom_yVLkCvjPK4JjUsw&s">
+            <h3>Titulo</h3>
+        </article>
+    </section>
+
+    <section id="localization">
+        <h2>Localização</h2>
+        <address>Rua da Consolação</address>
+        <br>
+        <iframe src="https://maps.google.com"></iframe>
+    </section>
+
+</main>
+
+<footer>
+    <p>Footer</p>
+</footer>
+
+</body>
+</html>
